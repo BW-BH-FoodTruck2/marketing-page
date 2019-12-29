@@ -1,0 +1,84 @@
+#navContainer
+{
+    background-color: @baseColor;
+
+    font-size: 2rem;
+
+    padding: 1vh 0;
+
+    display: flex;
+    align-items: center;
+
+    @media @phone
+    {
+        flex-wrap: wrap;
+    }
+
+    span
+    {
+        user-select: none;
+        color: white;
+        margin-left: 1%;
+        width: 40%;
+        transition: color 0.15s linear;
+
+        &:hover
+        {
+            color:black;
+        }
+
+        @media @phone
+        {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 5px;
+        }
+    }
+
+    nav
+    {
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        
+        @media @phone
+        {
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        a
+        {
+            color: white;
+            padding: 0 1%;
+            margin-right: 4%;
+            text-decoration: underline;
+            user-select: none;
+            transition: color 0.25s;
+
+            &:hover
+            {
+                color: black;
+            }
+
+            @media @phone
+            {
+                padding: 1vh 0;
+                margin-right: 0;
+                width: 100%;
+                text-align: center;
+
+                &:first-child
+                {
+                    border-top: 1px solid white;
+                }
+
+                &:not(:last-child)
+                {
+                    padding: 12px 0px;
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
+    }
+}
