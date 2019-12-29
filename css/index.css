@@ -15,17 +15,41 @@ html {
   display: flex;
   align-items: center;
 }
+@media (max-width: 500px) {
+  #navContainer {
+    flex-wrap: wrap;
+  }
+}
 #navContainer span {
+  user-select: none;
+  color: white;
   margin-left: 1%;
   width: 40%;
+  transition: color 0.15s linear;
+}
+#navContainer span:hover {
+  color: black;
+}
+@media (max-width: 500px) {
+  #navContainer span {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+  }
 }
 #navContainer nav {
   width: 60%;
   display: flex;
   justify-content: flex-end;
 }
+@media (max-width: 500px) {
+  #navContainer nav {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
 #navContainer nav a {
-  color: black;
+  color: white;
   padding: 0 1%;
   margin-right: 4%;
   text-decoration: underline;
@@ -33,5 +57,20 @@ html {
   transition: color 0.25s;
 }
 #navContainer nav a:hover {
-  color: white;
+  color: black;
+}
+@media (max-width: 500px) {
+  #navContainer nav a {
+    padding: 1vh 0;
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+  #navContainer nav a:first-child {
+    border-top: 1px solid white;
+  }
+  #navContainer nav a:not(:last-child) {
+    padding: 12px 0px;
+    border-bottom: 1px solid white;
+  }
 }
