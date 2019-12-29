@@ -37,3 +37,64 @@ header{
         padding-bottom: 2rem;
     }
 }
+
+.testimonials
+{
+    h2
+    {
+        margin-top: 5px;
+        text-decoration: underline;
+    }
+    #Testimonials
+    {
+        overflow-x: hidden;
+        margin-top: 8px;
+        display: flex;
+        justify-content: center;
+        clip-path: inset(100% 66.7%);
+
+        @keyframes _Slide
+        {
+            0% { left: 333.33px; }
+            20% { left: 333.33px; }
+            21% { left: 0px; }
+            49% { left: 0px; }
+            50% { left: -333.33px; }
+            98% {left: -333.33px; }
+            100% { left: 333.33px ; }
+        }
+        
+        .quote
+        {
+            animation: _Slide 40s infinite;
+            position: relative;
+
+            margin-bottom: 8px;
+
+            width: 40%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            img
+            {
+                clip-path: circle(50%);
+                width: 100%;
+                max-width: 180px;
+                max-height: 180px;
+                border-radius: 40%;
+            }
+            h3
+            {
+                width: 100%;
+                text-align: center;
+                font-size: 1.8rem;
+            }
+            p
+            {
+                text-align: center;
+            }
+        }
+    }
+}
