@@ -1,3 +1,5 @@
+// HEADER SECTION
+
 header{
     display: flex;
     flex-flow: column;
@@ -22,28 +24,61 @@ header{
 }
 
 
+// MISSION SECTION
+
+.mission-container{
+    padding-top: 2rem;
+}
 
 
 .mission {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-    padding-top: 4rem;
+    padding-top: 1.5rem;
+    p{
+            letter-spacing: .15rem;
+        }
    img {
         width: 40%;
-    }
-    h2{
-        text-decoration: underline;
-        padding-bottom: 2rem;
+        padding-left: 2rem;
     }
 }
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    img{
+        width: 45%;
+        padding: 0 0 7.5rem 0;
+    }
+    article{
+        padding: 0 2rem;
+        p{
+            letter-spacing: .15rem;
+        }
+        a{
+            .btn()
+        }
+        a:hover {
+        color: @color-primary-2;
+        background-color: white;
+        border: 1px solid @color-primary-2;
+        }   
+    }
+   
+}
+
+
+
+// TESTIMONIAL SECTION
 
 .testimonials
 {
     h2
     {
         margin-top: 5px;
-        text-decoration: underline;
     }
     #Testimonials
     {
@@ -104,6 +139,8 @@ header{
         }
     }
 }
+
+// FOOTER SECTION
 
 footer {
     background-color: @baseColor;
