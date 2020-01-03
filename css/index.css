@@ -171,7 +171,7 @@ img {
 #navContainer {
   background-color: #B881C0;
   font-size: 2rem;
-  padding: 1vh 0;
+  padding: 1.5rem 0;
   display: flex;
   align-items: center;
 }
@@ -348,4 +348,12 @@ header a:hover {
 }
 .testimonials #Testimonials .quote p {
   text-align: center;
+}
+footer {
+  background-color: #B881C0;
+}
+footer p {
+  color: white;
+  text-align: center;
+  padding: 2rem;
 }
