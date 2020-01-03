@@ -288,7 +288,17 @@ header a:hover {
   margin-top: 8px;
   display: flex;
   justify-content: center;
-  clip-path: inset(100% 66.7%);
+  clip-path: inset(100% 333px);
+}
+@media (max-width: 500px) {
+  .testimonials #Testimonials {
+    clip-path: inset(100% 87px);
+  }
+}
+@media (max-width: 800px) {
+  .testimonials #Testimonials {
+    clip-path: inset(100% 238px);
+  }
 }
 @keyframes _Slide {
   0% {
@@ -317,7 +327,8 @@ header a:hover {
   animation: _Slide 40s infinite;
   position: relative;
   margin-bottom: 8px;
-  width: 40%;
+  min-width: 332px;
+  max-width: 332px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

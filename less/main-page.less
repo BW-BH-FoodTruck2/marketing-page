@@ -52,7 +52,11 @@ header{
         margin-top: 8px;
         display: flex;
         justify-content: center;
-        clip-path: inset(100% 66.7%);
+
+        clip-path: inset(100% 333px);
+
+        @media @phone { clip-path: inset(100% 87px); }
+        @media @tablet { clip-path: inset(100% 238px); }
 
         @keyframes _Slide
         {
@@ -72,7 +76,9 @@ header{
 
             margin-bottom: 8px;
 
-            width: 40%;
+            min-width: 332px;
+            max-width: 332px;
+
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
