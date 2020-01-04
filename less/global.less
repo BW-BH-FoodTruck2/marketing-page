@@ -23,6 +23,9 @@ h2 {
   text-decoration: underline;
   padding-bottom: 2rem;
   letter-spacing: .15rem;
+  @media @phone {
+    text-align: center;
+  }
 }
 
 h4 {
@@ -45,4 +48,14 @@ img {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
+
+    @media @tablet {
+      max-width: 650px;
+    
+      @media @phone {
+        max-width: 400px;
+      }
+    }
+
+
 }
