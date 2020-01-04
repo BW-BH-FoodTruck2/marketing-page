@@ -319,8 +319,11 @@ header a:hover {
   background-color: white;
   border: 1px solid #D8B2DE;
 }
-.testimonials h2 {
-  margin-top: 5px;
+.testimonials {
+  min-width: 1000px;
+  max-width: 1000px;
+  position: relative;
+  left: calc(50% - 500px);
 }
 .testimonials #Testimonials {
   overflow-x: hidden;
@@ -328,16 +331,6 @@ header a:hover {
   display: flex;
   justify-content: center;
   clip-path: inset(100% 333px);
-}
-@media (max-width: 500px) {
-  .testimonials #Testimonials {
-    clip-path: inset(100% 87px);
-  }
-}
-@media (max-width: 800px) {
-  .testimonials #Testimonials {
-    clip-path: inset(100% 238px);
-  }
 }
 @keyframes _Slide {
   0% {

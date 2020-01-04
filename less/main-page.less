@@ -76,10 +76,12 @@ header{
 
 .testimonials
 {
-    h2
-    {
-        margin-top: 5px;
-    }
+    min-width: 1000px;
+    max-width: 1000px;
+
+    position: relative;
+    left: calc(50% - 500px);
+
     #Testimonials
     {
         overflow-x: hidden;
@@ -88,9 +90,6 @@ header{
         justify-content: center;
 
         clip-path: inset(100% 333px);
-
-        @media @phone { clip-path: inset(100% 87px); }
-        @media @tablet { clip-path: inset(100% 238px); }
 
         @keyframes _Slide
         {
