@@ -263,11 +263,12 @@ header a {
   text-decoration: none;
   user-select: none;
   letter-spacing: 0.15rem;
+  transition: all 0.15s;
 }
 header a:hover {
-  color: #D8B2DE;
   background-color: white;
-  border: 1px solid #D8B2DE;
+  border: 1px solid #7A3384;
+  color: #7A3384;
 }
 .mission-container {
   padding-top: 2rem;
@@ -313,11 +314,12 @@ header a:hover {
   text-decoration: none;
   user-select: none;
   letter-spacing: 0.15rem;
+  transition: all 0.15s;
 }
 .product article a:hover {
-  color: #D8B2DE;
   background-color: white;
-  border: 1px solid #D8B2DE;
+  border: 1px solid #7A3384;
+  color: #7A3384;
 }
 .testimonials {
   min-width: 1000px;
