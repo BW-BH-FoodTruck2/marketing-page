@@ -16,11 +16,6 @@ header{
     a{
         .btn()
     }
-    a:hover {
-    color: @color-primary-2;
-    background-color: white;
-    border: 1px solid @color-primary-2;
-  }
 }
 
 
@@ -61,13 +56,7 @@ header{
         a{
             .btn()
         }
-        a:hover {
-        color: @color-primary-2;
-        background-color: white;
-        border: 1px solid @color-primary-2;
-        }   
     }
-   
 }
 
 
@@ -76,10 +65,12 @@ header{
 
 .testimonials
 {
-    h2
-    {
-        margin-top: 5px;
-    }
+    min-width: 1000px;
+    max-width: 1000px;
+
+    position: relative;
+    left: calc(50% - 500px);
+
     #Testimonials
     {
         overflow-x: hidden;
@@ -87,10 +78,7 @@ header{
         display: flex;
         justify-content: center;
 
-        clip-path: inset(100% 333px);
-
-        @media @phone { clip-path: inset(100% 87px); }
-        @media @tablet { clip-path: inset(100% 238px); }
+        clip-path: polygon(666px 100%, 666px 0px, 333px 0px, 333px 100%);
 
         @keyframes _Slide
         {
