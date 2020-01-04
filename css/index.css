@@ -180,6 +180,7 @@ img {
 @media (max-width: 500px) {
   #navContainer {
     flex-wrap: wrap;
+    padding-bottom: 4px;
   }
 }
 #navContainer span {
@@ -263,11 +264,12 @@ header a {
   text-decoration: none;
   user-select: none;
   letter-spacing: 0.15rem;
+  transition: all 0.15s;
 }
 header a:hover {
-  color: #D8B2DE;
   background-color: white;
-  border: 1px solid #D8B2DE;
+  border: 1px solid #7A3384;
+  color: #7A3384;
 }
 .mission-container {
   padding-top: 2rem;
@@ -313,31 +315,25 @@ header a:hover {
   text-decoration: none;
   user-select: none;
   letter-spacing: 0.15rem;
+  transition: all 0.15s;
 }
 .product article a:hover {
-  color: #D8B2DE;
   background-color: white;
-  border: 1px solid #D8B2DE;
+  border: 1px solid #7A3384;
+  color: #7A3384;
 }
-.testimonials h2 {
-  margin-top: 5px;
+.testimonials {
+  min-width: 1000px;
+  max-width: 1000px;
+  position: relative;
+  left: calc(50% - 500px);
 }
 .testimonials #Testimonials {
   overflow-x: hidden;
   margin-top: 8px;
   display: flex;
   justify-content: center;
-  clip-path: inset(100% 333px);
-}
-@media (max-width: 500px) {
-  .testimonials #Testimonials {
-    clip-path: inset(100% 87px);
-  }
-}
-@media (max-width: 800px) {
-  .testimonials #Testimonials {
-    clip-path: inset(100% 238px);
-  }
+  clip-path: polygon(666px 100%, 666px 0px, 333px 0px, 333px 100%);
 }
 @keyframes _Slide {
   0% {
