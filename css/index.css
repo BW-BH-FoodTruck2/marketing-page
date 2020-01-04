@@ -180,6 +180,7 @@ img {
 @media (max-width: 500px) {
   #navContainer {
     flex-wrap: wrap;
+    padding-bottom: 4px;
   }
 }
 #navContainer span {
