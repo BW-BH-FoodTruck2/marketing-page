@@ -393,7 +393,6 @@ header a:hover {
   left: calc(50% - 500px);
 }
 .testimonials #Testimonials {
-  overflow-x: hidden;
   margin-top: 8px;
   display: flex;
   justify-content: center;
