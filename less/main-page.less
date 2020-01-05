@@ -8,10 +8,22 @@ header{
     img{
         width: 60%;
         margin: 2rem 0;
+
+        @media @tablet {
+            width: 75%;
+        }
+
+        @media @phone {
+            width: 90%;
+        }
     }
     h1 {
         padding-bottom: 2rem;
         font-style: italic;
+        
+        @media @tablet {
+            text-align: center;
+        }
     }
     a{
         .btn()
@@ -22,7 +34,7 @@ header{
 // MISSION SECTION
 
 .mission-container{
-    padding-top: 2rem;
+    padding: 2rem 0;
 }
 
 
@@ -31,30 +43,63 @@ header{
     justify-content: space-between;
     flex-direction: row-reverse;
     padding-top: 1.5rem;
+
+    @media @phone {
+       flex-direction: column;
+       align-items: center; 
+    }
+
     p{
-            letter-spacing: .15rem;
+        letter-spacing: .15rem;
+        
         }
    img {
         width: 40%;
         padding-left: 2rem;
+
+        @media @phone {
+            width: 90%;
+            padding: 0 0 2rem 0;
+        }
     }
 }
 
 .product{
     display: flex;
     justify-content: space-between;
-    padding-top: 1.5rem;
+    padding: 2.5rem 0;
+
+    @media @tablet {
+       flex-direction: column;
+       align-items: center; 
+    }
+
     img{
         width: 45%;
         padding: 0 0 7.5rem 0;
+
+        @media @tablet {
+            width: 75%;
+            padding-bottom: 2rem;
+        }
+
+        @media @phone {
+            width: 90%;
+        }
+
     }
     article{
         padding: 0 2rem;
-        p{
+          p{
             letter-spacing: .15rem;
         }
+
+        @media @phone {
+            text-align: center;
+        }
+      
         a{
-            .btn()
+            .btn();           
         }
     }
 }
