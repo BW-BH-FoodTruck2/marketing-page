@@ -186,7 +186,7 @@ img {
   }
 }
 #navContainer {
-  background-color: #B881C0;
+  background-color: #2C1816;
   font-size: 2rem;
   padding: 1.5rem 0;
   display: flex;
@@ -206,7 +206,7 @@ img {
   transition: color 0.15s linear;
 }
 #navContainer span:hover {
-  color: black;
+  color: gold;
 }
 @media (max-width: 500px) {
   #navContainer span {
@@ -235,7 +235,7 @@ img {
   transition: color 0.25s;
 }
 #navContainer nav a:hover {
-  color: black;
+  color: goldenrod;
 }
 @media (max-width: 500px) {
   #navContainer nav a {
@@ -283,7 +283,7 @@ header h1 {
   }
 }
 header a {
-  background: #7A3384;
+  background: #5A4F4E;
   border: 1px solid #000000;
   border-radius: 5px;
   padding: 9px 28px;
@@ -299,8 +299,8 @@ header a {
 }
 header a:hover {
   background-color: white;
-  border: 1px solid #7A3384;
-  color: #7A3384;
+  border: 1px solid #5A4F4E;
+  color: #5A4F4E;
 }
 .mission-container {
   padding: 2.5rem 0;
@@ -372,7 +372,7 @@ header a:hover {
   }
 }
 .product article a {
-  background: #7A3384;
+  background: #5A4F4E;
   border: 1px solid #000000;
   border-radius: 5px;
   padding: 9px 28px;
@@ -388,8 +388,8 @@ header a:hover {
 }
 .product article a:hover {
   background-color: white;
-  border: 1px solid #7A3384;
-  color: #7A3384;
+  border: 1px solid #5A4F4E;
+  color: #5A4F4E;
 }
 .line {
   padding: 2.5rem 0;
@@ -457,7 +457,7 @@ header a:hover {
   text-align: center;
 }
 footer {
-  background-color: #B881C0;
+  background-color: #2C1816;
 }
 footer p {
   color: white;
