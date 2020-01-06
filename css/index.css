@@ -257,6 +257,7 @@ header {
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 3.5rem;
 }
 header img {
   width: 60%;
@@ -302,22 +303,26 @@ header a:hover {
   color: #7A3384;
 }
 .mission-container {
-  padding: 2rem 0;
+  padding: 2.5rem 0;
+  border-top: 1.5px dashed rgba(0, 0, 0, 0.2);
 }
 .mission {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
+  align-items: center;
   padding-top: 1.5rem;
 }
 @media (max-width: 500px) {
   .mission {
     flex-direction: column;
-    align-items: center;
   }
 }
 .mission p {
   letter-spacing: 0.15rem;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-left: 1.5rem;
 }
 .mission img {
   width: 40%;
@@ -385,6 +390,10 @@ header a:hover {
   background-color: white;
   border: 1px solid #7A3384;
   color: #7A3384;
+}
+.line {
+  padding: 2.5rem 0;
+  border-top: 1.5px dashed rgba(0, 0, 0, 0.2);
 }
 .testimonials {
   min-width: 1000px;
