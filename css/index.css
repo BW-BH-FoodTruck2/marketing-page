@@ -465,6 +465,93 @@ footer p {
   text-align: center;
   padding: 2rem;
 }
-.team-bg {
-  background-image: url(/img/chalkboard.jpg);
+.team-container {
+  background: url(/img/chalkboard.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  padding: 15rem 0;
+}
+.team-container h1 {
+  padding-bottom: 3rem;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+.team-section {
+  min-width: 1000px;
+  max-width: 1000px;
+  position: relative;
+  left: calc(50% - 500px);
+}
+.team-section #team-cards {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  clip-path: polygon(666px 100%, 666px 0px, 333px 0px, 333px 100%);
+}
+@keyframes _Slide {
+  0% {
+    left: 333.33px;
+  }
+  20% {
+    left: 333.33px;
+  }
+  21% {
+    left: 0px;
+  }
+  49% {
+    left: 0px;
+  }
+  50% {
+    left: -333.33px;
+  }
+  98% {
+    left: -333.33px;
+  }
+  100% {
+    left: 333.33px;
+  }
+}
+.team-section #team-cards .team-quote {
+  animation: _Slide 40s infinite;
+  position: relative;
+  margin-bottom: 8px;
+  min-width: 332px;
+  max-width: 332px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.team-section #team-cards .team-quote img {
+  clip-path: circle(50%);
+  width: 100%;
+  max-width: 180px;
+  max-height: 151px;
+  border-radius: 40%;
+}
+.team-section #team-cards .team-quote h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 1.5rem 0;
+}
+.team-section #team-cards .team-quote p {
+  text-align: center;
+}
+.about-footer {
+  position: fixed;
+  bottom: 0;
+  width: 69.45%;
+}
+@media (max-width: 800px) {
+  .about-footer {
+    width: 87.5%;
+  }
+}
+@media (max-width: 500px) {
+  .about-footer {
+    width: 82.5%;
+  }
 }
