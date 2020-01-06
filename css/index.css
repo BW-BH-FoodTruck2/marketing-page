@@ -169,6 +169,7 @@ p {
 img {
   max-width: 100%;
   height: auto;
+  flex-shrink: 0;
 }
 .page-container {
   max-width: 1000px;
@@ -463,4 +464,7 @@ footer p {
   color: white;
   text-align: center;
   padding: 2rem;
+}
+.team-bg {
+  background-image: url(/img/chalkboard.jpg);
 }
