@@ -466,7 +466,7 @@ footer p {
   padding: 2rem;
 }
 .team-container {
-  background: url(/img/board.jpg) no-repeat;
+  background: url(../img/board.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
   text-align: center;
@@ -497,4 +497,14 @@ footer p {
   max-width: 150px;
   max-height: 150px;
   border-radius: 3%;
+}
+#team-cards .team-card a {
+  color: white;
+  transition: color 0.15s;
+}
+#team-cards .team-card a:hover {
+  color: goldenrod;
+}
+#team-cards .team-card a i {
+  font-size: 2.6rem;
 }
