@@ -1,0 +1,510 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  text-decoration: underline;
+  padding-bottom: 2rem;
+  letter-spacing: 0.15rem;
+}
+@media (max-width: 500px) {
+  h2 {
+    text-align: center;
+  }
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+.page-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .page-container {
+    max-width: 650px;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  .page-container {
+    max-width: 400px;
+  }
+}
+#navContainer {
+  background-color: #2C1816;
+  font-size: 2rem;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  #navContainer {
+    flex-wrap: wrap;
+    padding-bottom: 4px;
+  }
+}
+#navContainer span {
+  user-select: none;
+  color: white;
+  margin-left: 1%;
+  width: 80%;
+  transition: color 0.15s linear;
+}
+#navContainer span:hover {
+  color: gold;
+}
+@media (max-width: 500px) {
+  #navContainer span {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+}
+#navContainer nav {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  #navContainer nav {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+#navContainer nav a {
+  color: white;
+  padding: 0 1%;
+  margin-right: 4%;
+  text-decoration: underline;
+  user-select: none;
+  transition: color 0.25s;
+}
+#navContainer nav a:hover {
+  color: goldenrod;
+}
+@media (max-width: 500px) {
+  #navContainer nav a {
+    padding: 1vh 0;
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+  #navContainer nav a:first-child {
+    border-top: 1px solid white;
+  }
+  #navContainer nav a:not(:last-child) {
+    padding: 12px 0px;
+    border-bottom: 1px solid white;
+  }
+}
+header {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3.5rem;
+}
+header img {
+  width: 60%;
+  margin: 2rem 0;
+}
+@media (max-width: 800px) {
+  header img {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  header img {
+    width: 90%;
+  }
+}
+header h1 {
+  padding-bottom: 2rem;
+  font-style: italic;
+}
+@media (max-width: 800px) {
+  header h1 {
+    text-align: center;
+  }
+}
+header a {
+  background: #5A4F4E;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 9px 28px;
+  color: #ffffff;
+  display: inline-block;
+  font: normal bold 18px/1 "Roboto", sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px #000000;
+  text-decoration: none;
+  user-select: none;
+  letter-spacing: 0.15rem;
+  transition: all 0.15s;
+}
+header a:hover {
+  background-color: white;
+  border: 1px solid #5A4F4E;
+  color: #5A4F4E;
+}
+.mission-container {
+  padding: 2.5rem 0;
+  border-top: 1.5px dashed rgba(0, 0, 0, 0.2);
+}
+.mission {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+@media (max-width: 500px) {
+  .mission {
+    flex-direction: column;
+  }
+}
+.mission p {
+  letter-spacing: 0.15rem;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-left: 1.5rem;
+}
+.mission img {
+  width: 40%;
+  padding-left: 2rem;
+}
+@media (max-width: 500px) {
+  .mission img {
+    width: 90%;
+    padding: 0 0 2rem 0;
+  }
+}
+.product {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 0;
+}
+@media (max-width: 800px) {
+  .product {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.product img {
+  width: 45%;
+  padding: 0 0 7.5rem 0;
+}
+@media (max-width: 800px) {
+  .product img {
+    width: 75%;
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .product img {
+    width: 90%;
+  }
+}
+.product article {
+  padding: 0 2rem;
+}
+.product article p {
+  letter-spacing: 0.15rem;
+}
+@media (max-width: 500px) {
+  .product article {
+    text-align: center;
+  }
+}
+.product article a {
+  background: #5A4F4E;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 9px 28px;
+  color: #ffffff;
+  display: inline-block;
+  font: normal bold 18px/1 "Roboto", sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px #000000;
+  text-decoration: none;
+  user-select: none;
+  letter-spacing: 0.15rem;
+  transition: all 0.15s;
+}
+.product article a:hover {
+  background-color: white;
+  border: 1px solid #5A4F4E;
+  color: #5A4F4E;
+}
+.line {
+  padding: 2.5rem 0;
+  border-top: 1.5px dashed rgba(0, 0, 0, 0.2);
+}
+.testimonials {
+  min-width: 1000px;
+  max-width: 1000px;
+  position: relative;
+  left: calc(50% - 500px);
+}
+.testimonials #Testimonials {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  clip-path: polygon(666px 100%, 666px 0px, 333px 0px, 333px 100%);
+}
+@keyframes _Slide {
+  0% {
+    left: 333.33px;
+  }
+  20% {
+    left: 333.33px;
+  }
+  21% {
+    left: 0px;
+  }
+  49% {
+    left: 0px;
+  }
+  50% {
+    left: -333.33px;
+  }
+  98% {
+    left: -333.33px;
+  }
+  100% {
+    left: 333.33px;
+  }
+}
+.testimonials #Testimonials .quote {
+  animation: _Slide 40s infinite;
+  position: relative;
+  margin-bottom: 8px;
+  min-width: 332px;
+  max-width: 332px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials #Testimonials .quote img {
+  clip-path: circle(50%);
+  width: 100%;
+  max-width: 180px;
+  max-height: 151px;
+  border-radius: 40%;
+}
+.testimonials #Testimonials .quote h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.testimonials #Testimonials .quote p {
+  text-align: center;
+}
+footer {
+  background-color: #2C1816;
+}
+footer p {
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+.team-container {
+  background: url(../img/board.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+}
+.team-container h1 {
+  padding: 3rem 0;
+  color: white;
+}
+#team-cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#team-cards .team-card {
+  padding: 1.5rem;
+  min-width: 332px;
+  max-width: 332px;
+  color: white;
+}
+#team-cards .team-card h3 {
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+}
+#team-cards .team-card img {
+  width: 100%;
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 3%;
+}
+#team-cards .team-card a {
+  color: white;
+  transition: color 0.15s;
+}
+#team-cards .team-card a:hover {
+  color: goldenrod;
+}
+#team-cards .team-card a i {
+  font-size: 2.6rem;
+}

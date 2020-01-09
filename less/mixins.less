@@ -1,0 +1,29 @@
+.btn() {
+    background:    @buttonColor;
+    border:        1px solid #000000;
+    border-radius: 5px;
+    padding:       9px 28px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 18px/1 "Roboto", sans-serif;
+    text-align:    center;
+    text-shadow:   1px 1px #000000;
+    text-decoration: none;
+    user-select: none;
+    letter-spacing: .15rem;
+
+    transition: all 0.15s;
+
+    &:hover
+    {
+        background-color: white;
+        border: 1px solid @buttonColor;
+        color: @buttonColor;
+    }
+
+ 
+}
+
+.dottedLine() {
+    border-top: 1.5px dashed rgba(0,0,0,0.2);
+}

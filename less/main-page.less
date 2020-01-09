@@ -1,0 +1,246 @@
+// HEADER SECTION
+
+header{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3.5rem;
+    img{
+        width: 60%;
+        margin: 2rem 0;
+
+        @media @tablet {
+            width: 75%;
+        }
+
+        @media @phone {
+            width: 90%;
+        }
+    }
+    h1 {
+        padding-bottom: 2rem;
+        font-style: italic;
+        
+        @media @tablet {
+            text-align: center;
+        }
+    }
+    a{
+        .btn();
+    }
+}
+
+
+// MISSION SECTION
+
+.mission-container{
+    padding: 2.5rem 0;
+    .dottedLine();
+}
+
+
+.mission {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 1.5rem;
+
+    @media @phone {
+       flex-direction: column;
+    }
+    p{
+        letter-spacing: .15rem;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-left: 1.5rem;
+        }
+   img {
+        width: 40%;
+        padding-left: 2rem;
+
+        @media @phone {
+            width: 90%;
+            padding: 0 0 2rem 0;
+        }
+    }
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 0;
+
+    @media @tablet {
+       flex-direction: column;
+       align-items: center; 
+    }
+
+    img{
+        width: 45%;
+        padding: 0 0 7.5rem 0;
+
+        @media @tablet {
+            width: 75%;
+            padding-bottom: 2rem;
+        }
+
+        @media @phone {
+            width: 90%;
+        }
+
+    }
+    article{
+        padding: 0 2rem;
+          p{
+            letter-spacing: .15rem;
+        }
+
+        @media @phone {
+            text-align: center;
+        }
+      
+        a{
+            .btn();           
+        }
+    }
+}
+
+
+
+// TESTIMONIAL SECTION
+
+.line {
+    padding: 2.5rem 0;
+    .dottedLine();
+}
+
+.testimonials
+{
+    min-width: 1000px;
+    max-width: 1000px;
+
+    position: relative;
+    left: calc(50% - 500px);
+
+    #Testimonials
+    {
+        margin-top: 8px;
+        display: flex;
+        justify-content: center;
+
+        clip-path: polygon(666px 100%, 666px 0px, 333px 0px, 333px 100%);
+
+        @keyframes _Slide
+        {
+            0% { left: 333.33px; }
+            20% { left: 333.33px; }
+            21% { left: 0px; }
+            49% { left: 0px; }
+            50% { left: -333.33px; }
+            98% {left: -333.33px; }
+            100% { left: 333.33px ; }
+        }
+        
+        .quote
+        {
+            animation: _Slide 40s infinite;
+            position: relative;
+
+            margin-bottom: 8px;
+
+            min-width: 332px;
+            max-width: 332px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            img
+            {
+                clip-path: circle(50%);
+                width: 100%;
+                max-width: 180px;
+                max-height: 151px;
+                border-radius: 40%;
+            }
+            h3
+            {
+                width: 100%;
+                text-align: center;
+                font-size: 1.8rem;
+            }
+            p
+            {
+                text-align: center;
+            }
+        }
+    }
+}
+
+// FOOTER SECTION
+
+footer {
+    background-color: @baseColor;
+    p{
+        color: @navFooterColor;
+        text-align: center;
+        padding: 2rem;
+    }
+}
+
+// ABOUT PAGE
+
+.team-container {
+    background: url(../img/board.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    h1{
+        padding: 3rem 0;
+        color: white;
+    }
+}
+
+#team-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .team-card{
+        padding: 1.5rem;
+        min-width: 332px;
+        max-width: 332px;
+
+        color: white;
+        h3{
+            font-size: 1.5rem;
+            padding: 1.5rem 0;
+        }
+        img
+        {
+            width: 100%;
+            max-width: 150px;
+            max-height: 150px;
+            border-radius: 3%;
+        }
+        a
+        {
+            color: white;
+            transition: color 0.15s;
+            &:hover
+            {
+                color: goldenrod;
+            }
+            i
+            {
+                font-size: 2.6rem;
+            }
+        }
+    }
+}
+
